@@ -11,7 +11,6 @@ header {
     top:0;
     z-index: 10;
     text-align:center;
-    opacity:0.7;
 }
 
 li {
@@ -91,8 +90,7 @@ header h2 {
 }
 
 .animal_icon {
-  width: 74px;
-  height: 74px;
+  width: 100%;
   opacity: 0.7;
 }
 
@@ -101,6 +99,7 @@ header h2 {
   position:absolute;
   top:37px;
   color:white;
+  text-shadow: 1px 7px rgb(35, 24, 24);
 }
 
 .item-text {

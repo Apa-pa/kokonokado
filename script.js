@@ -5,11 +5,11 @@ $(function() {
   $('.faq-list-item').click(
     function(){
       var $answer = $(this).find('.answer');
-      if ($answer.hasclass('open')) {
-        $answer.removeclass('open');
+      if ($answer.hasClass('open')) {
+        $answer.removeClass('open');
         $(this).find('span').text('+');
       }  else {
-        $answer.addclass('open');
+        $answer.addClass('open');
         $(this).find('span').text('-');
 
       }
