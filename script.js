@@ -2,19 +2,19 @@ $(function() {
 
 // FAQ
 
-$('.faq-list-item').click(
+  $('.faq-list-item').click(
     function(){
-      const $answer = $(this).find('.answer');
+      var $answer = $(this).find('.answer');
       if ($answer.hasclass('open')) {
-        $answer.removeclass('oepn');
+        $answer.removeclass('open');
         $(this).find('span').text('+');
       }  else {
-        $answer.addclass('oepn');
+        $answer.addclass('open');
         $(this).find('span').text('-');
 
       }
     }
-);
+  );
 
 
 
