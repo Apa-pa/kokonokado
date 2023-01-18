@@ -1,6 +1,14 @@
+* {
+  box-sizing:border-box;
+}
+
 a {
     text-decoration: none;
   }
+
+body {
+  font-family:Arial, Meiryo, sans-serif;
+}
 
 header {
     color:white;
@@ -13,17 +21,95 @@ header {
     text-align:center;
 }
 
+.menu-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(58, 88, 94, 0.9);
+  z-index: 100;
+  width: 300px;
+  height: 500px;
+  text-align: center;
+  display:none;
+  border-radius: 4px;
+}
+
+.menu-logo {
+  float: left;
+  padding-top:5px;
+  padding-left: 10px;
+}
+
+.menu-logo-img {
+  height:60px;
+}
+
+#menu-close {
+  float: right;
+  font-size: 30px;
+  padding: 20px 20px 20px 0;
+  color:white;
+}
+
+.menu {
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  background-color: white;
+  border-radius: 10px;
+  width: 280px;
+  height: auto;
+  text-align: left;
+  padding-left: 10px;
+  
+}
+
+.menu h2{
+  font-size: 18px;
+  color:rgb(128, 70, 70)
+}
+
+
+.menu-link {
+  text-decoration: none;
+  color: black;
+  display:inline-block;
+  width: 200px;
+}
+
+.fa-chevron-right {
+  float: right;
+  color: rgba(58, 88, 94, 0.9);
+}
+
+
+
 li {
     list-style:none;
 }
 
 .container {
-  width:80%;
+  max-width:1170px;
+  width:86%;
   margin:0 auto;
+}
+
+.container h2{
+  font-size: 32px;
+}
+
+.container h3 {
+  font-size: 24px;
 }
 
 .header-left {
   float:left;
+}
+
+.banner {
+  padding-left:10px;
+  height: 70px;
+ 
 }
 
 header h2 {
@@ -39,7 +125,6 @@ header h2 {
 
 .header-right {
   float:right;
-  margin-right:50px;
 }
 
 
@@ -54,6 +139,7 @@ header h2 {
   display:inline-block;
 }
 
+
 .header-link:hover{
     background-color: rgba(0, 0, 0, 0.545);
 }
@@ -62,44 +148,55 @@ header h2 {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
-.top-wrapper {
-  
-  color:black;
-  margin-top:75px;
-  margin-bottom:50px;
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 24px;
+  padding: 20px 20px 20px 0;
+  display: none;  
 }
 
-.top-left {
-  width:75%;
-  height:600px;
-  background-color: mintcream;
-  float:left;
+
+.top-wrapper {
+  background-color: white;
+  color:black;
+  margin: 120px 0 50px 0;
   text-align:center;
-  border-radius:10px;
+  width:100%;
 }
+
 
 .item {
   float: left;
-  width:25%
+  width: 50%;
+  height: 450px;
+}
+
+.item:hover {
+  opacity:0.7;
 }
 
 .item-icon {
   position:relative;
-  width: 70%;
   margin: 0 auto;
 }
 
-.animal_icon {
-  width: 100%;
+.category_icon {
+  width: 350px;
+  height: auto;
   opacity: 0.7;
 }
 
 .item-icon p {
+  font-size: 20px;
   width: 100%;
   position:absolute;
-  top:37px;
-  color:white;
-  text-shadow: 1px 7px rgb(35, 24, 24);
+  top: 110px;
+  color:black;
+  text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+              -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+              0px 1px 0 #FFF,  0-1px 0 #FFF,
+              -1px 0 0 #FFF, 1px 0 0 #FFF;
 }
 
 .item-text {
@@ -109,14 +206,7 @@ header h2 {
   color: #b3aeb5;
 }
 
-.top-right{
-  width:23%;
-  height:600px;
-  background-image: url(22739902.png);
-  float:right;
-  padding: 0 5px;
-  border-radius:10px;
-}
+
 
 .top-date{
   font: size 10px;
@@ -127,18 +217,58 @@ header h2 {
 }
 
 .clear {
-  clear:left;
-  clear:right;
+  clear:both;
+}
+
+#aboutus-wrapper {
+  background-color: white;
+  width:100%;
+  padding:20px 0;
+  margin: 0 auto;
+  font-size: 16px;
 }
 
 .faq-wrapper {
-  background-color:#e6ecf0;;
+  background-color:white;
   width:100%;
   margin: 0 auto;
 }
 
+.btn {
+  padding: 8px 24px;
+  width: 170px;
+  color: white;
+  display: inline-block;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0px 2px black;
+}
+
+.btn:hover{
+  opactiy: 0.8;
+}
+
+.btn:active {
+  position:relative;
+  top:2px;
+  box-shadow: none;
+}
+
+.insta {
+  background-color: #CF2E92;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #1DA1F2;
+}
+
+.fa-brands {
+  margin-right: 5px;
+}
+
 #faq-list {
-  width: 500px;
+  width: 60%;
   margin: 0 auto;
   padding: 0;
   list-style: none;

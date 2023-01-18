@@ -1,0 +1,92 @@
+/* for タブレット */
+
+@media all and (max-width:1000px) {
+
+    .header-right {
+        margin: 0;
+    }
+
+    .header-link {
+        font-size:14px;
+        width:80px;
+        margin-left:5px;
+    }
+    
+    .item {
+      width:100%;
+      margin-bottom:50px;
+    }
+    
+    .container h2 {
+        font-size: 24px;
+    }
+
+    .container h3 {
+        font-size: 18px;
+    }
+
+    #aboutus-wrapper {
+        font-size: 14px;
+    }
+
+    #faq-list {
+        width: 85%;
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+      }
+
+  }
+
+/* for スマホ */
+
+  @media all and (max-width: 670px) {
+
+    .container {
+        width:100%;
+      }
+    
+
+    .header-right {
+        display: none;
+    }
+    
+    .menu-icon {
+        display: block;
+        
+    }
+
+
+
+
+    .item {
+      width:100%;
+      margin-bottom:50px;
+    }
+
+    .category_icon {
+        width: 320px;
+        height: auto;
+        opacity: 0.7;
+      }
+    
+    .container h2 {
+        font-size: 17px;
+    }
+
+    .container h3 {
+        font-size: 14px;
+    }
+
+    #aboutus-wrapper {
+        font-size: 12px;
+    }
+
+    #faq-list {
+        width: 85%;
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+      }
+
+  }

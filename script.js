@@ -16,8 +16,24 @@ $(function() {
     }
   );
 
+// homeに戻る
+    $('#home-link').click(
+      function(){
+        $('html,body').scrollTop(0);
 
+      }
+    );
 
+// メニュー
+  $('#menu-show').click(
+    function(){
+    $('#menu-modal').fadeIn();
+  });
+
+  $('#menu-close').click(
+    function(){
+    $('#menu-modal').fadeOut();
+  });
 
 
 

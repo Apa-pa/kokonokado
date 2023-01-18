@@ -2,8 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>ココノカド</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北海道菓子kokonokado</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
     <script src="https://kit.fontawesome.com/7b7c7828c2.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
@@ -12,74 +14,135 @@
       <div class="container">
         
         <div class="header-left">
-          <h2>ココノカド</h2>
+          <a href=""> <img src="logoh70.png" class="banner"></i> </a>
         </div>
+        <div class="menu-icon" id="menu-show">
+          <span class="fa fa-bars"></span>
+        </div>
+        
+
 
         <div class="header-right">
-            <a href="" class="header-link">HOME</a>
-            <a href="" class="header-link">STORY</a>
-            <a href="" class="header-link">ABOUTUS</a>
-            <a href="" class="header-link">SHOP</a>
+            <a href="" class="header-link">ホーム</a>
+            <a href="" class="header-link">商品紹介</a>
+            <a href="#aboutus-wrapper" class="header-link">ABOUT US</a>
+            <a href="" class="header-link">通販サイト</a>
         </div>
 
       </div>  
     </header>
 
+    <div class="menu-wrapper" id="menu-modal">
+
+      <div class="menu-logo">
+
+      <img src="logo4.png" class="menu-logo-img"></img>
+
+      </div>
+
+      <div id="menu-close"><span class="fa-solid fa-xmark"></span></div>
+      
+      <div class="menu"> 
+      
+        <h2>商品紹介</h2> 
+        <ul>
+          <li><a href="" class="menu-link">スコーン <span class="fa-solid fa-chevron-right"></span></a></li>
+          <li><a href="" class="menu-link">タルト＆キッシュ <span class="fa-solid fa-chevron-right"></span></a></li>
+          <li><a href="" class="menu-link">クッキー <span class="fa-solid fa-chevron-right"></span></a></li>
+          <li><a href="" class="menu-link">刺繍作品 <span class="fa-solid fa-chevron-right"></span></a></li>
+        </ul>
+
+        <h2>オンラインショップ</h2>
+        <ul>
+          <li><a href="" class="menu-link">販売サイト<span class="fa-solid fa-chevron-right"></span></a></li>
+        </ul>
+          
+        <h2>会社情報</h2>
+        <ul>
+          <li><a href="" class="menu-link">Instagram<span class="fa-solid fa-chevron-right"></span></a></li>
+          <li><a href="" class="menu-link">Twitter <span class="fa-solid fa-chevron-right"></span></a></li>
+          <li><a href="#aboutus-wrapper" class="menu-link">About us<span class="fa-solid fa-chevron-right"></span></a></li>
+        </ul>
+
+      </div>
+    </div>
+
  <div class="top-wrapper">
     <div class="container">
-      <div class="top-left">
-        <h1>ようこそ</h1>
-        <h2><i class="fa-solid fa-basketball"></i>ココノカドは北海道で営業するお店です</h2>
-        <p><i class="fa-solid fa-thumbs-up"></i>店頭ではテイクアウトとイートインが可能なカフェ<br>
-          オンライン販売では焼き菓子を中心に展開しています<br>
-          道産の食材にこだわり、なるべく身体に優しい商品を作っています。
-
-        </p>
+      
+        
 
         <div class="item">
-          <div class="item-icon"><img src="animal_icon1.png" class="animal_icon">
-            <p>焼き菓子</p>
+          <div class="item-icon"><img src="sukon.jpg" class="category_icon">
+            <p>スコーン</p>
           </div>
-          <p class="item-text">こどもに安心して食べさせることができる焼き菓子を目指しています。</p>
+          <p class="item-text">こどもに安心して食べさせることができる焼き菓子を目指し、小麦やバターなど道産の食材を中心に使用しています。
+          </p>
         </div>
 
         <div class="item">
-          <div class="item-icon"><img src="animal_icon1.png" class="animal_icon">
-            <p>キッシュ</p>
+          <div class="item-icon"><img src="taruto.JPG" class="category_icon">
+            <p>タルト＆キッシュ</p>
           </div>
-          <p class="item-text">サクサクとした厚みのある生地で食べ応えがあるキッシュです。</p>
+          <p class="item-text">タルトおよびキッシュは厚みがある生地で食べ応えがあります。</p>
+        </div>
+
+        
+
+        <div class="item">
+          <div class="item-icon"><img src="kukki3.jpg" class="category_icon">
+            <p>クッキー</p>
+          </div>
+          <p class="item-text">茶道の先生が選定した抹茶を使用したクッキーもあります。</p>
         </div>
 
         <div class="item">
-          <div class="item-icon"><img src="animal_icon1.png" class="animal_icon">
-            <p>和菓子</p>
-          </div>
-          <p class="item-text">自家製の餡子を使用、茶道の先生の協力を得て作成しています。</p>
-        </div>
-
-        <div class="item">
-          <div class="item-icon"><img src="animal_icon1.png" class="animal_icon">
+          <div class="item-icon"><img src="shishu.JPG" class="category_icon">
             <p>刺繍作品</p>
           </div>
           <p class="item-text">ハンドメイド作品を販売しています。</p>
         </div>
 
+        
 
-      </div>
-
-      <div class="top-right">
-        <h3>News</h3>
-        <p><span class="top-date">2022-08</span>作成開始</p>
+      
 
 
 
-      </div>
+      
       
 
     </div>
  </div>
 
  <div class="clear"></div>
+ 
+
+ <div id="aboutus-wrapper">
+    <div class="container">
+      <div class="story">
+  
+      <h2>kokonokadoは北海道で営むお店です</h2>
+
+      <p>手作りお菓子とキッシュなどのフード、そして刺繍作品を扱っています</p>
+      
+      <p>お菓子やフード、刺繍作品は店頭およびオンライン販売で購入いただけます<br>
+      店頭ではテイクアウトとイートインが可能で、店頭でのみ購入いただける商品も用意しております<br>
+      抹茶を提供しており、ご希望の場合には抹茶を点てる体験も可能です</p>
+      <p>
+      お菓子・フードについては道産の食材にこだわり、なるべく身体に優しい商品を作っています<br>
+      使用している食品についてはSNSでも発信していますのでぜひご覧ください
+      </p>
+    
+      <a href="" class="btn insta"><span class="fa-brands fa-instagram"></span>Instagram</a>
+      <a href="" class="btn twitter"><span class="fa-brands fa-twitter"></span>Twitter</a>
+    
+    </div>
+      
+    </div>
+  </div>
+
+
 
 <div class="faq-wrapper">
   <div class="container">
@@ -110,13 +173,13 @@
 
  <footer>
   <div class="container">
-    <h3>ココノカド</h3>
-      <p>クレヨンしんちゃんにでてくるのはサトーココノカドー</p>
+    <h3>kooknokado</h3>
+      <p>北海道にある焼き菓子と抹茶、ハンドメイド作品の店</p>
   </div>
  </footer>
 
- <div class="arrow-up">
-  <a href="#"><i class="fa-solid fa-circle-arrow-up fa-2xl"></i></a>
+ <div class="arrow-up" id="home-link">
+  <i class="fa-solid fa-circle-arrow-up fa-2xl" ></i>
   </div>
 
   <script src="script.js"></script>
