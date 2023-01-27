@@ -3,7 +3,7 @@
 @media all and (max-width:1000px) {
 
     .header-right {
-        margin: 0;
+        margin-right: 0;
     }
 
     .header-link {
@@ -36,7 +36,11 @@
         list-style: none;
       }
 
-  }
+    .slide-items {
+        width: 100%;
+    }
+
+}
 
 /* for スマホ */
 
@@ -56,12 +60,14 @@
         
     }
 
-
+    .top-wrapper {
+        margin: 120px 0 5px 0;
+      }
 
 
     .item {
       width:100%;
-      margin-bottom:50px;
+      margin-bottom:30px;
     }
 
     .category_icon {
@@ -80,6 +86,9 @@
 
     #aboutus-wrapper {
         font-size: 12px;
+        background-image: url(img/harinezumibgi2.jpg);
+        background-size: cover;
+        padding-top: 20px;
     }
 
     #faq-list {
@@ -87,6 +96,11 @@
         margin: 0 auto;
         padding: 0;
         list-style: none;
-      }
+    }
+
+    .slide-items {
+        width: 100%;
+    }
+
 
   }

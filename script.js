@@ -36,6 +36,37 @@ $(function() {
   });
 
 
+// スライド
+  $(".slide-items").slick({
+    infinite: true,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    dots: true,
+    variableWidth: true,
+
+
+    responsive: [{
+      breakpoint: 900, // ブレイクポイントを指定
+      settings: {
+      slidesToShow: 2,
+      speed: 600,
+      },
+      },
+      {
+      breakpoint: 600,
+      settings: {
+      slidesToShow: 1,
+      centerMode: true,
+      centerPadding: '10%',
+      },
+      },
+      ]
+  });
+    
+
+
+
 
 
 
