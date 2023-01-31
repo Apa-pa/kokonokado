@@ -193,7 +193,7 @@ header h2 {
   font-size: 20px;
   width: 100%;
   position:absolute;
-  top: 110px;
+  top: 40%;
   color:black;
   text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
               -1px 1px 0 #FFF, 1px -1px 0 #FFF,
@@ -222,7 +222,7 @@ header h2 {
   clear:both;
 }
 
-#aboutus-wrapper {
+#about {
   background-image: url(img/harinezumibgi.webp);
   background-size: cover;
   width:100%;
@@ -301,9 +301,7 @@ header h2 {
   margin-bottom: 15px;
 }
 
-.open {
-  display: block;
-}
+
 
 footer {
   color:white;
@@ -436,6 +434,7 @@ footer p{
   text-align: center;
 }
 
+
 .item-modal-img {
   width: auto;
   height: 50%;
@@ -470,4 +469,8 @@ footer p{
   text-align: center;
   box-shadow: 0px 1px rgba(224, 228, 5, 0.879);
   background-color: #ffd814;
+}
+
+.open {
+  display: block;
 }

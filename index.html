@@ -4,10 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>北海道菓子kokonokado</title>
+    <!-- css  -->
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="responsive.css">
+    <!-- javascript-->
     <script src="https://kit.fontawesome.com/7b7c7828c2.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    
   </head>
   <body>
     <header>
@@ -20,19 +26,21 @@
           <span class="fa fa-bars"></span>
         </div>
         
-<!--PCタブレット用のリンク-->
 
+
+        <!--PCタブレット用のリンク-->
         <div class="header-right">
-            <a href="index.html" class="header-link">ホーム</a>
-            <a href="menu.html" class="header-link">商品紹介</a>
-            <a href="index.html#aboutus-wrapper" class="header-link">ABOUT US</a>
-            <a href="https://kokonokado.base.shop/" target="_new" rel="noopener" class="header-link">通販サイト</a>
+          <a href="index.html" class="header-link">ホーム</a>
+          <a href="menu.html" class="header-link">商品紹介</a>
+          <a href="index.html#about" class="header-link">ABOUT US</a>
+          <a href="https://kokonokado.base.shop/" target="_new" rel="noopener" class="header-link">通販サイト</a>
         </div>
 
       </div>  
     </header>
 
-<!-- スマホ用のメニュー　-->
+
+    <!-- スマホ用のメニュー　-->
     <div class="menu-wrapper" id="menu-modal">
 
       <div class="menu-logo">
@@ -62,7 +70,7 @@
         <ul>
           <li><a href="https://www.instagram.com/hk_kokonokado/" target="_new" rel="noopener" class="menu-link">Instagram<span class="fa-solid fa-chevron-right"></span></a></li>
           <li><a href="https://twitter.com/hk_kokonokado" target="_new" rel="noopener" class="menu-link">Twitter <span class="fa-solid fa-chevron-right"></span></a></li>
-          <li><a href="index.html#aboutus-wrapper" class="menu-link">About us<span class="fa-solid fa-chevron-right"></span></a></li>
+          <li><a href="index.html#about" class="menu-link">About us<span class="fa-solid fa-chevron-right"></span></a></li>
         </ul>
 
       </div>
@@ -76,32 +84,44 @@
         
 
         <div class="item">
-          <div class="item-icon"><img src="img/sukon.webp" class="category_icon">
-            <p>スコーン</p>
+          <div class="item-icon">
+            <a href="menu.html#yakigashi">
+              <img src="img/sukon.webp" class="category_icon">
+              <p>スコーン</p>
+            </a>
           </div>
           <p class="item-text">こどもに安心して食べさせることができる焼き菓子を目指し、小麦やバターなど道産の食材を中心に使用しています。
           </p>
         </div>
 
         <div class="item">
-          <div class="item-icon"><img src="img/taruto.webp" class="category_icon">
-            <p>タルト＆キッシュ</p>
+          <div class="item-icon">
+            <a href="menu.html#food">
+              <img src="img/taruto.webp" class="category_icon">
+              <p>キッシュ</p>
+            </a>
           </div>
-          <p class="item-text">タルトおよびキッシュは厚みがある生地で食べ応えがあります。</p>
+          <p class="item-text">キッシュは厚みがある生地で食べ応えがあります。</p>
         </div>
 
         
 
         <div class="item">
-          <div class="item-icon"><img src="img/kukki3.webp" class="category_icon">
-            <p>クッキー</p>
+          <div class="item-icon">
+            <a href="menu.html#matcha">
+              <img src="img/wagashi.webp" class="category_icon">
+              <p>抹茶</p>
+            </a>
           </div>
-          <p class="item-text">茶道の先生が選定した抹茶を使用したクッキーもあります。</p>
+          <p class="item-text">店頭では抹茶を提供しております。抹茶を点てる体験も可能です。オンラインでは抹茶を使用したクッキーなどのお菓子を購入いただけます。</p>
         </div>
 
         <div class="item">
-          <div class="item-icon"><img src="img/shishu.webp" class="category_icon">
-            <p>刺繍作品</p>
+          <div class="item-icon">
+            <a href="menu.html#shishu">
+              <img src="img/shishu.webp" class="category_icon">
+              <p>刺繍作品</p>
+            </a>
           </div>
           <p class="item-text">ハンドメイド作品を販売しています。</p>
         </div>
@@ -121,7 +141,7 @@
  <div class="clear"></div>
  
 
- <div id="aboutus-wrapper">
+ <div id="about">
     <div class="container">
       <div class="story">
   
