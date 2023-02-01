@@ -86,10 +86,23 @@
 
     #about {
         font-size: 12px;
-        background-image: url(img/harinezumibgi2.jpg);
+        background-image: url(img/harinezumibgi2.webp);
         background-size: cover;
         padding-top: 20px;
     }
+
+    .item-modal {
+        width: 90%;
+        height: 80%;
+        position: fixed;
+        top: 10%;
+        left: 5%;
+        z-index: 200;
+        background-color: white;
+        display:none;
+        border-radius: 4px;
+        text-align: center;
+      }
 
     #faq-list {
         width: 85%;

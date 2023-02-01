@@ -24,22 +24,27 @@ $(function(){
         }
       );
   
-  // メニュー
+  // メニューモーダル
     $('#menu-show').click(
       function(){
       $('#menu-modal').fadeIn();
       $('.overlay').addClass("open");
     });
+
+    const menuClose= ()=> {
+      $('#menu-modal').fadeOut();
+      $('.item-modal').fadeOut();
+      $('.overlay').removeClass("open");
+    };
   
     $('#menu-close').click(
       function(){
-      $('#menu-modal').fadeOut();
+      menuClose();
     });
   
     $('.overlay').click(
       function(){
-        $('#menu-modal').fadeOut();
-        $('.overlay').removeClass("open");
+        menuClose();
       }
     )
   
@@ -86,23 +91,13 @@ $(function(){
   
       
   // 商品モーダルを閉じる
-    
-    function modalClose(){
-      $('.item-modal').fadeOut();
-      $('#js-overlay').removeClass("open");
-    };
   
     $('.item-modal-close').click(
       function(){
-        modalClose();
+        menuClose();
       }
     );
-  
-    $('#js-overlay').click(
-      function(){
-        modalClose();
-      }
-    );
+
   
     
   
