@@ -3,121 +3,106 @@
 @media all and (max-width:1000px) {
 
     .header-right {
-        margin-right: 0;
+        gap: 15px;
+        /* Reduced gap */
     }
 
     .header-link {
-        font-size:14px;
-        width:80px;
-        margin-left:5px;
-    }
-    
-    .item {
-      width:100%;
-      margin-bottom:50px;
-    }
-    
-    .container h2 {
-        font-size: 24px;
-    }
-
-    .container h3 {
-        font-size: 18px;
-    }
-
-    #about {
         font-size: 14px;
+        padding: 0 8px;
+        /* Compact padding */
     }
 
-    #faq-list {
-        width: 85%;
-        margin: 0 auto;
-        padding: 0;
-        list-style: none;
-      }
+    /* Grid is auto-fit so this is largely redundant but safe to keep for control */
+    .top-wrapper .container {
+        /* If 300px minmax is too wide for tablets, let it handle auto-fit, 
+           but here we can ensure gap is slightly smaller */
+        gap: 40px 20px;
+    }
 
-    .slide-items {
-        width: 100%;
+    #about h2 {
+        font-size: 1.8rem;
     }
 
 }
 
 /* for スマホ */
 
-  @media all and (max-width: 670px) {
+@media all and (max-width: 670px) {
 
     .container {
-        width:100%;
-      }
-    
+        width: 100%;
+        padding: 0 20px;
+        /* Comfortable padding */
+    }
 
     .header-right {
         display: none;
     }
-    
+
     .menu-icon {
         display: block;
-        
+    }
+
+    .hero-logo {
+        width: 150px;
+        /* Smaller logo */
+    }
+
+    .hero-catch {
+        font-size: 1rem;
+        /* Smaller catch copy */
     }
 
     .top-wrapper {
-        margin: 120px 0 5px 0;
-      }
-
-
-    .item {
-      width:100%;
-      margin-bottom:30px;
+        padding: 60px 0;
     }
 
-    .category_icon {
-        width: 320px;
-        height: auto;
-        opacity: 0.7;
-      }
-    
-    .container h2 {
-        font-size: 17px;
-    }
-
-    .container h3 {
-        font-size: 14px;
+    .top-wrapper .container {
+        /* Ensure 1 column on small screens */
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 
     #about {
-        font-size: 12px;
-        background-image: url(img/harinezumibgi2.webp);
-        background-size: cover;
-        padding-top: 20px;
+        padding: 60px 0;
+        /* No background image override, keep clean */
     }
 
+    #about h2 {
+        font-size: 1.5rem;
+    }
+
+    .category_icon {
+        max-width: 100%;
+        width: auto;
+    }
+
+    /* FAQ */
+    .heading h2 {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+    }
+
+    .faq-list-item {
+        padding: 20px;
+    }
+
+    .question {
+        font-size: 0.95rem;
+    }
+
+    /* Modal */
     .item-modal {
-        width: 90%;
-        height: 80%;
-        position: fixed;
-        top: 10%;
-        left: 5%;
-        z-index: 200;
-        background-color: white;
-        display:none;
-        border-radius: 4px;
-        text-align: center;
-      }
-
-    #faq-list {
-        width: 85%;
-        margin: 0 auto;
-        padding: 0;
-        list-style: none;
+        width: 95%;
+        padding: 25px;
     }
 
-    .slide-items {
-        width: 100%;
+    .item-modal h2 {
+        font-size: 1.5rem;
     }
 
-    .menu-intro {
-        background-image: url();
+    .menu-intro h2 {
+        font-size: 1.8rem;
     }
-
-
-  }
+}
